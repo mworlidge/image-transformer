@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 class ImageTransformer:
     """A class for transforming and sampling non-overlapping regions from an image.
-    
+
     This class is responsible for:
     - Loading an image from a specified file path.
     - Validating the size of samples to ensure they fit within the image dimensions.
@@ -30,6 +30,15 @@ class ImageTransformer:
 
         # Store image dimensions
         self.height, self.width = self.image.shape[:2]
+
+    def get_image_dimensions(self):
+        """
+        Returns the dimensions of the image.
+
+        Returns:
+            Tuple[int, int]: A tuple containing the width and height of the image.
+        """
+        return self.width, self.height
 
     def validate_sample_size(self, sample_width: int, sample_height: int):
         """
