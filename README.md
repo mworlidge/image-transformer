@@ -44,6 +44,7 @@ python3 scripts/usage.py
 ## Tests
 To run tests for the package, use:
 ```
+pip3 install .[dev]
 pytest
 ```
 
