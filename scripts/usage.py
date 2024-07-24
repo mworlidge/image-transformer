@@ -7,6 +7,10 @@ image_path = "path/to/image.jpg"
 # Instantiate the sampler with the image path
 sampler = ImageTransformer(image_path)
 
+# Get image dimensions
+width, height = sampler.get_image_dimensions()
+print(f"Image dimensions: width={width}, height={height}")
+
 # Define the sample size (width, height)
 sample_width = 100
 sample_height = 100
