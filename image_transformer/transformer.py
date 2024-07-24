@@ -5,6 +5,14 @@ from typing import List, Tuple
 
 
 class ImageTransformer:
+    """A class for transforming and sampling non-overlapping regions from an image.
+    
+    This class is responsible for:
+    - Loading an image from a specified file path.
+    - Validating the size of samples to ensure they fit within the image dimensions.
+    - Generating non-overlapping random samples from the image.
+    - Saving the sampled regions to specified file paths.
+    """
     def __init__(self, image_path: str):
         """
         Initialize the ImageTransformer with an image path.
